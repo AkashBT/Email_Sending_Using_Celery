@@ -152,5 +152,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER ='mathurakash700@gmail.com'
 EMAIL_HOST_PASSWORD = "vgykjupogtysuhwq"
 DEFAULT_FROM_EMAIL = 'Celery <mathurakash700@gmail.com>'
-
-#cgdjtyuzsqcuorfi

@@ -9,6 +9,7 @@ from datetime import timedelta
 @shared_task(bind=True)
 def send_mail_func(self):
     users = get_user_model().objects.all()
+    print(users)
     #timezone.localtime(users.date_time) + timedelta(days=2)
     for user in users:
         mail_subject = "Hi! Celery Testing"
@@ -22,3 +23,5 @@ def send_mail_func(self):
             fail_silently=True,
         )
     return "Done"
+
+    
